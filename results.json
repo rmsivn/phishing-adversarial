@@ -1,0 +1,99 @@
+{
+  "baseline": {
+    "RF": {
+      "Accuracy": 99.9,
+      "Precision": 99.8,
+      "Recall": 100.0,
+      "F1": 99.9
+    },
+    "SVM": {
+      "Accuracy": 100.0,
+      "Precision": 100.0,
+      "Recall": 100.0,
+      "F1": 100.0
+    }
+  },
+  "adversarial": {
+    "Synonym Substitution": {
+      "RF": {
+        "Accuracy": 99.7,
+        "Precision": 99.8,
+        "Recall": 99.6,
+        "F1": 99.7
+      },
+      "SVM": {
+        "Accuracy": 99.8,
+        "Precision": 100.0,
+        "Recall": 99.6,
+        "F1": 99.8
+      }
+    },
+    "Homoglyph Substitution": {
+      "RF": {
+        "Accuracy": 91.3,
+        "Precision": 99.76,
+        "Recall": 82.8,
+        "F1": 90.49
+      },
+      "SVM": {
+        "Accuracy": 97.1,
+        "Precision": 100.0,
+        "Recall": 94.2,
+        "F1": 97.01
+      }
+    },
+    "Whitespace Injection": {
+      "RF": {
+        "Accuracy": 99.8,
+        "Precision": 99.8,
+        "Recall": 99.8,
+        "F1": 99.8
+      },
+      "SVM": {
+        "Accuracy": 99.9,
+        "Precision": 100.0,
+        "Recall": 99.8,
+        "F1": 99.9
+      }
+    },
+    "URL Obfuscation": {
+      "RF": {
+        "Accuracy": 96.2,
+        "Precision": 99.78,
+        "Recall": 92.6,
+        "F1": 96.06
+      },
+      "SVM": {
+        "Accuracy": 97.1,
+        "Precision": 100.0,
+        "Recall": 94.2,
+        "F1": 97.01
+      }
+    }
+  },
+  "dataset_info": {
+    "total": 5000,
+    "train": 4000,
+    "test": 1000,
+    "phishing_test": 500,
+    "legitimate_test": 500,
+    "features": [
+      "url_count",
+      "suspicious_url",
+      "url_length_avg",
+      "has_ip_url",
+      "domain_mismatch",
+      "urgent_word_count",
+      "credential_request",
+      "html_tag_ratio",
+      "sender_domain_free",
+      "subject_length",
+      "link_text_mismatch",
+      "has_attachment",
+      "reply_to_differs",
+      "recipient_count",
+      "spelling_error_count"
+    ],
+    "n_features": 15
+  }
+}
